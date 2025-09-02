@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Brew - Аниме Блог</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/normalize.css">
+</head>
+<body>
+    <!-- Лоадер -->
+    <div id="loader">
+        <div class="pixel-loader"></div>
+        <div class="loader-text">Загрузка пиксельного мира...</div>
+        <div class="loading-bar">
+            <div class="loading-progress" id="loading-progress"></div>
+        </div>
+    </div>
+
+    <!-- Кастомный курсор -->
+    <div class="pixel-cursor"></div>
+
+    <!-- Шапка -->
+    <header>
+        <div class="nav-container">
+            <div class="logo">PIXEL BREW</div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Главная</a></li>
+                    <li><a href="#blog">Блог</a></li>
+                    <li><a href="#beer">Пиво</a></li>
+                    <li><a href="#anime">Аниме</a></li>
+                    <li><a href="#about">О нас</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Основной контент -->
+    <main>
+        <section id="home" class="hero">
+            <h1>Добро пожаловать в Pixel Brew!</h1>
+            <p>Место, где встречаются аниме, пиксельное искусство, крафтовое пиво и тянки</p>
+            <button class="pixel-button" id="explore-button">Исследовать</button>
+        </section>
+
+        <section id="blog">
+            <h2>Последние статьи</h2>
+            <div class="blog-grid">
+                <!-- Карточки блога -->
+                <div class="blog-card pixel-border">
+                    <div class="blog-card-image"></div>
+                    <div class="blog-card-content">
+                        <h3>Лучшие пиксельные игры 2023</h3>
+                        <p>Обзор самых захватывающих пиксельных игр этого года, которые стоит попробовать.</p>
+                        <span class="blog-card-date"><i class="fas fa-calendar"></i> 15 октября 2023</span>
+                    </div>
+                </div>
+
+                <div class="blog-card pixel-border">
+                    <div class="blog-card-image"></div>
+                    <div class="blog-card-content">
+                        <h3>Крафтовое пиво: гид для начинающих</h3>
+                        <p>Как выбрать своё первое крафтовое пиво и на что обращать внимание.</p>
+                        <span class="blog-card-date"><i class="fas fa-calendar"></i> 12 октября 2023</span>
+                    </div>
+                </div>
+
+                <div class="blog-card pixel-border">
+                    <div class="blog-card-image"></div>
+                    <div class="blog-card-content">
+                        <h3>Топ-10 аниме осени 2023</h3>
+                        <p>Самые ожидаемые аниме-сериалы этого сезона, которые нельзя пропустить.</p>
+                        <span class="blog-card-date"><i class="fas fa-calendar"></i> 8 октября 2023</span>
+                    </div>
+                </div>
+
+                <div class="blog-card pixel-border">
+                    <div class="blog-card-image"></div>
+                    <div class="blog-card-content">
+                        <h3>Рисуем пиксельных персонажей</h3>
+                        <p>Пошаговое руководство по созданию собственных пиксельных героев.</p>
+                        <span class="blog-card-date"><i class="fas fa-calendar"></i> 5 октября 2023</span>
+                    </div>
+                </div>
+
+                <div class="blog-card pixel-border">
+                    <div class="blog-card-image"></div>
+                    <div class="blog-card-content">
+                        <h3>Дегустация японского пива</h3>
+                        <p>Обзор самых интересных сортов пива из Японии, которые стоит попробовать.</p>
+                        <span class="blog-card-date"><i class="fas fa-calendar"></i> 1 октября 2023</span>
+                    </div>
+                </div>
+
+                <div class="blog-card pixel-border">
+                    <div class="blog-card-image"></div>
+                    <div class="blog-card-content">
+                        <h3>Создание аниме-стиля в CSS</h3>
+                        <p>Как использовать современный CSS для создания аниме-инспирированного дизайна.</p>
+                        <span class="blog-card-date"><i class="fas fa-calendar"></i> 28 сентября 2023</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <aside class="sidebar pixel-border">
+            <h3>Популярные теги</h3>
+            <ul>
+                <li><a href="#">#пиксели</a></li>
+                <li><a href="#">#аниме</a></li>
+                <li><a href="#">#пиво</a></li>
+                <li><a href="#">#тянки</a></li>
+                <li><a href="#">#игры</a></li>
+                <li><a href="#">#рисование</a></li>
+                <li><a href="#">#япония</a></li>
+                <li><a href="#">#крафт</a></li>
+            </ul>
+        </aside>
+    </main>
+
+    <!-- Интерактивные элементы -->
+    <div class="character" id="character1"></div>
+    <div class="character" id="character2"></div>
+    <div class="beer-glass" id="beer-glass"></div>
+
+    <!-- Футер -->
+    <footer>
+        <div class="logo">PIXEL BREW</div>
+        <p>Место, где встречаются аниме, пиксельное искусство, крафтовое пиво и тянки</p>
+        
+        <div class="social-links">
+            <a href="#"><i class="fab fa-vk"></i></a>
+            <a href="#"><i class="fab fa-telegram"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-discord"></i></a>
+        </div>
+        
+        <p>© 2023 Pixel Brew. Все права защищены.</p>
+    </footer>
+
+    <!-- Модальные окна -->
+    <div class="modal" id="character-modal">
+        <div class="modal-content pixel-border">
+            <button class="close-modal">&times;</button>
+            <h3>Пиксельная тянка</h3>
+            <p>Привет! Я пиксельная тянка, и я рада видеть тебя на нашем сайте! Хочешь узнать секрет?</p>
+            <p>Нажми на пивную кружку в углу, чтобы увидеть что-то интересное!</p>
+        </div>
+    </div>
+
+    <div class="modal" id="beer-modal">
+        <div class="modal-content pixel-border">
+            <button class="close-modal">&times;</button>
+            <h3>Пиксельное пиво</h3>
+            <p>Пиксельное пиво - самое вкусное в цифровом мире!</p>
+            <p>Попробуй наше специальное предложение: аниме-эль с нотками сакуры.</p>
+        </div>
+    </div>
+
+    <script src="./app/script.js"></script>
+</body>
+</html>
